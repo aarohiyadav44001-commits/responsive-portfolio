@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Aarohi Yadav</h1>
+            <p>MCA Student | Web Development Learner</p>
+
+            <button id="themeBtn">Dark Mode</button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Aarohi Yadav. I am currently pursuing MCA
+                and have a strong interest in web development. I enjoy learning
+                modern technologies and creating responsive websites that work
+                smoothly on different devices.
+            </p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+
+            <div class="skills-container">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>C++</span>
+                <span>Java</span>
+                <span>SQL</span>
+                <span>Responsive Design</span>
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project-box">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website built using HTML and CSS.</p>
+                </div>
+
+                <div class="project-box">
+                    <h3>FoodiFashion</h3>
+                    <p>An e-commerce application for food and clothing products.</p>
+                </div>
+
+                <div class="project-box">
+                    <h3>Student Management System</h3>
+                    <p>A project developed to manage student records efficiently.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+
+            <p>Email: aarohi@example.com</p>
+            <p>Phone: +91 XXXXX XXXXX</p>
+            <p>Location: Rajasthan, India</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Aarohi Yadav | Portfolio Project</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("themeBtn");
+
+        btn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+
+</body>
+</html>
